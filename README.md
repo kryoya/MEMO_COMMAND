@@ -21,8 +21,8 @@ export PATH=$PATH:$(pwd)
 <br>
 # Usage
  
-memoコマンドは-make(-m), -search(-s), -add(-a)のオプションがあります.
-辞書形式のファイルとなっているので, keyを指定して検索をかけることができます.
+memoコマンドは-make(-m), -search(-s), -add(-a)のオプションがあります. 
+辞書形式のファイルとなっているので, keyを指定して検索をかけることができます.  
   
 <br>
 ##-make
@@ -30,7 +30,7 @@ memoコマンドは-make(-m), -search(-s), -add(-a)のオプションがあり�
 ```bash
 memo -make 新規ファイル名
 ```
-新規ファイルは.memo_project上に作成され, setting_fileにファイル名が記録されます.
+新規ファイルは.memo_project上に作成され, setting_fileにファイル名が記録されます.  
 <br>
 <br>
 ##-search
@@ -39,8 +39,8 @@ memo -make 新規ファイル名
 memo 指定ファイル名 -search 検索key名
 ```
   
-ファイル名を指定しない場合, generalが選択されます.
-また, -makeオプションを通さず作成されたファイルは指定することができません.
+ファイル名を指定しない場合, generalが選択されます.  
+また, -makeオプションを通さず作成されたファイルは指定することができません.  
 <br>
 <br>
 ##-add
@@ -49,8 +49,8 @@ memo 指定ファイル名 -search 検索key名
 memo 指定ファイル名 -add 登録key名 登録word名
 ```
 
-先ほどと同様にファイル名を指定しない場合, generalが選択されます.
-登録key名を省略することができ, その場合はそのファイルのインデックスがkey名となります.
+先ほどと同様にファイル名を指定しない場合, generalが選択されます.  
+登録key名を省略することができ, その場合はそのファイルのインデックスがkey名となります.  
 <br>
   <br>
 ##オプションなし
@@ -71,9 +71,9 @@ memo 指定ファイル名
 <br>
 # Author
  
-* 作成者 KUBO Ryoya
-* 所属 National Institute of Technology, Kurume College of Department of Electrical and Electronic Engineering
-* E-mail ryo.32011023@gmail.com
+* 作成者 KUBO Ryoya  
+* 所属 National Institute of Technology, Kurume College of Department of Electrical and Electronic Engineering  
+* E-mail ryo.32011023@gmail.com  
  
    
 # License
