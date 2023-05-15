@@ -348,31 +348,6 @@ void	sort_all_two(char	**two)
 	}
 }
 
-/*
-int	search_key(t_file	file, t_size	size, char	*key)
-{
-	int		left;
-	int		right;
-	int		i;
-
-	left = 0;
-	right = size.line;
-	printf("%i", size.line);
-	printf("there isn't setting_file\n");
-	while (left < right)
-	{
-		i = (left + right) / 2;
-		if (strcmp(file.key_two[i], key) == 0)
-			return (i);
-		if (strcmp(file.key_two[i], key) < 0)
-			left = i + 1;
-		else
-			right = i;
-	}
-	return (-1);
-}
-*/
-
 int	search_key(t_file	file, t_size	size, char	*key)
 {
 	for(int i = 0; i < size.line; i++)
