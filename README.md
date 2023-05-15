@@ -27,7 +27,7 @@ memoコマンドは-make(-m), -search(-s), -add(-a)のオプションがあり�
   
 <br>
 
-##-make
+### -make
 
 ```bash
 memo -make 新規ファイル名
@@ -36,7 +36,7 @@ memo -make 新規ファイル名
 <br>
 <br>
 
-##-search
+### -search
 
 ```bash
 memo 指定ファイル名 -search 検索key名
@@ -47,7 +47,7 @@ memo 指定ファイル名 -search 検索key名
 <br>
 <br>
 
-##-add
+### -add
 
 ```bash
 memo 指定ファイル名 -add 登録key名 登録word名
