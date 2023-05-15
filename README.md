@@ -70,10 +70,10 @@ memo 指定ファイル名
 # Note
  
 バグ, 改善点がありましたら連絡をください.
-   
 <br>
 <br>
 <br>
+
 # Author
  
 * 作成者 KUBO Ryoya  
