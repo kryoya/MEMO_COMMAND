@@ -1,59 +1,67 @@
 # MEMO_COMMAND
  
-分かりやすくてカッコイイ名前をつける（今回は"hoge"という名前をつける）
- 
-"hoge"が何かを簡潔に紹介する
- 
-# DEMO
- 
-"hoge"の魅力が直感的に伝えわるデモ動画や図解を載せる
- 
-# Features
- 
-"hoge"のセールスポイントや差別化などを説明する
+UNIX上で簡単に手早くメモを取ることができるコマンドを作成しました.
  
 # Requirement
  
-"hoge"を動かすのに必要なライブラリなどを列挙する
- 
-* huga 3.5.2
-* hogehuga 1.0.2
+C言語を動かせる環境があれば大丈夫です.
  
 # Installation
  
-Requirementで列挙したライブラリなどのインストール方法を説明する
- 
+1.ホームディレクトリ直下に.memo_projectをダウンロードしてください.
+2.カレントディレクトリ(.memo_project)にて下のコマンドを実行してください.
 ```bash
-pip install huga_package
+export PATH=$PATH:$(pwd)
 ```
- 
+
 # Usage
  
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
+memoコマンドは-make(-m), -search(-s), -add(-a)のオプションがあります.
+辞書形式のファイルとなっているので, keyを指定して検索をかけることができます.
+
+##-make
+
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+memo -make 新規ファイル名
 ```
- 
+新規ファイルは.memo_project上に作成され, setting_fileにファイル名が記録されます.
+
+##-search
+
+```bash
+memo 指定ファイル名 -search 検索key名
+```
+
+ファイル名を指定しない場合, generalが選択されます.
+また, -makeオプションを通さず作成されたファイルは指定することができません.
+
+##-add
+
+```bash
+memo 指定ファイル名 -add 登録key名 登録word名
+```
+
+先ほどと同様にファイル名を指定しない場合, generalが選択されます.
+登録key名を省略することができ, その場合はそのファイルのインデックスがkey名となります.
+
+##オプションなし
+
+```bash
+memo 指定ファイル名
+```
+
+オプションを選択せず, ファイル名だけを指定した場合はそのファイルの中身が表示されます.
+
 # Note
  
-注意点などがあれば書く
+まだバグ, 改善点が多いと思いますので何かありましたら連絡をください.
  
 # Author
  
-作成情報を列挙する
- 
-* 作成者
-* 所属
-* E-mail
+* 作成者 KUBO Ryoya
+* 所属 National Institute of Technology, Kurume College of Department of Electrical and Electronic Engineering
+* E-mail ryo.32011023@gmail.com
  
 # License
-ライセンスを明示する
+当ライセンスはMITライセンスの規約に基づいて付与されています.
  
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
-社内向けなら社外秘であることを明示してる
- 
-"hoge" is Confidential.
