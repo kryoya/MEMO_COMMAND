@@ -12,11 +12,11 @@ C言語を動かせる環境があれば大丈夫です.
  <br>
 # Installation
  
-1.ホームディレクトリ直下(/home/ユーザ名)に.memo_projectをダウンロードしてください. 
+1.ホームディレクトリ直下(/home/ユーザ名)に.memo_projectをダウンロードしてください.<br>
 2.カレントディレクトリ(.memo_project)にて下のコマンドを実行してください.  
 ```bash
 export PATH=$PATH:$(pwd)
-```
+``` 
 <br>
 <br>
 
